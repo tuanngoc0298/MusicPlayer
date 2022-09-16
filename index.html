@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" href="#" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Music Player</title>
+
+        <link
+            href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="player-music">
+            <div class="music-card">
+                <div class="music-card__header">
+                    <div class="list-music-icon">
+                        <i class="fa-solid fa-list-music text"></i>
+                        <div class="tooltip tooltip-playlist">Show Playlist</div>
+                    </div>
+                    <div class="music-card__title text">Now Playing:</div>
+                    <div class="add-favourite-icon">
+                        <i class="fa-regular fa-heart heart-icon text"></i>
+                        <i class="fa-solid fa-heart heart-icon-red text"></i>
+                        <div class="tooltip tooltip-add-fav">Add Favourite</div>
+                    </div>
+                </div>
+
+                <div class="music-card__cd">
+                    <img src="" class="cd-img" alt="" draggable="false" />
+                </div>
+                <div class="song">
+                    <h3 class="song__name text"></h3>
+                    <p class="song__author text"></p>
+                </div>
+
+                <div class="progress-bar-wraaper">
+                    <div class="progress-bar">
+                        <div class="progress-bar__value"></div>
+                    </div>
+                </div>
+                <div class="progress-time">
+                    <div class="progress-time__current text"></div>
+                    <div class="progress-time__duration text"></div>
+                </div>
+
+                <div class="controls">
+                    <div class="btn btn-random text">
+                        <i class="fa-solid fa-shuffle"></i>
+                    </div>
+                    <div class="btn btn-prev text">
+                        <i class="fa-solid fa-backward-step"></i>
+                    </div>
+                    <div class="btn btn-play text">
+                        <i class="fa-solid fa-circle-play btn__play--play-icon"></i>
+                        <i class="fa-solid fa-circle-pause btn__play--pause-icon"></i>
+                    </div>
+                    <div class="btn btn-next text">
+                        <i class="fa-solid fa-forward-step"></i>
+                    </div>
+                    <div class="btn btn-repeat text">
+                        <i class="fa-solid fa-repeat btn-repeat-off"></i>
+                        <i class="fa-solid fa-repeat-1 btn-repeat-on"></i>
+                    </div>
+                </div>
+
+                <audio class="audio" src=""></audio>
+                <div class="volume-change">
+                    <div class="volume-change__icon text">
+                        <i class="fa-solid fa-volume volume__icon"></i>
+                        <i class="fa-solid fa-volume-xmark volume__icon--mute"></i>
+                    </div>
+                    <div class="volume-change-wrapper">
+                        <div class="volume-change__bar">
+                            <div class="volume-change__value"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="playlist-wrapper">
+                <div class="playlist">
+                    <div class="playlist__header">
+                        <div class="playlist__title text">My playlist</div>
+                        <div class="playlist_close-icon">
+                            <i class="fa-solid fa-xmark text"></i>
+                        </div>
+                    </div>
+                    <ul class="playlist_songs"></ul>
+                </div>
+            </div>
+        </div>
+
+        <script src="./app.js"></script>
+    </body>
+</html>
