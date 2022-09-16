@@ -5,7 +5,7 @@
 }
 
 :root {
-    --card-height: 405px;
+    --card-height: 400px;
 }
 html {
     font-family: "Poppins", sans-serif;
@@ -143,7 +143,6 @@ html {
 .progress-bar-wraaper {
     padding: 1px 0;
     margin: 22px 10px 5px;
-    width: 320px;
     cursor: pointer;
 }
 
@@ -242,8 +241,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 8px;
-    margin-bottom: 5px;
+    margin-top: 9px;
 }
 
 .volume-change__icon {
@@ -332,7 +330,7 @@ html {
     width: var(--card-height);
     background: url("../img/background-min.gif") no-repeat center top / cover;
     border-radius: 10px;
-    padding: 20px 0;
+    padding: 18px 0;
     /* display: none; */
 }
 .playlist-wrapper.playlist-open {
@@ -397,10 +395,10 @@ html {
 .playlist_item-info {
 }
 .playlist_item-name {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
 }
 .playlist_item-author {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 .playlist_item-options {
     background: linear-gradient(#21e9f3, #ffeb07);

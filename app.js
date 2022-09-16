@@ -112,7 +112,7 @@ const apps = {
             path: "./assets/music/ThatGirl-OllyMurs-6560207.mp3",
         },
         {
-            name: "Con Mua Ngang Qua",
+            name: "CMNQ",
             author: "Son Tung",
             image: "./assets/img/SonTung1-min.jpg",
             path: "./assets/music/ConMuaNgangQua-SonTungMTP-2944936.mp3",
@@ -138,7 +138,7 @@ const apps = {
         },
 
         {
-            name: "Con Mua Ngang Qua 2",
+            name: "CMNQ 2",
             author: "Son Tung",
             image: "./assets/img/SonTung2-min.jpg",
             path: "./assets/music/ConMuaNgangQuaPart2-M-TP_3c26j.mp3",
@@ -168,7 +168,7 @@ const apps = {
             path: "./assets/music/IDo-911-2757427.mp3",
         },
         {
-            name: "Con Mua Ngang Qua 3",
+            name: "CMNQ 3",
             author: "Son Tung",
             image: "./assets/img/SonTung2-min.jpg",
             path: "./assets/music/ConMuaNgangQuapart3-MTP-2427879.mp3",
