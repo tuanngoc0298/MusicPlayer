@@ -193,6 +193,12 @@ const apps = {
             path: "./assets/music/Symphony-CleanBanditZaraLarsson-4822950.mp3",
         },
         {
+            name: "Waiting For You",
+            author: "MoNo",
+            image: "./assets/img/mono.jpg",
+            path: "./assets/music/WaitingForYou-MONOOnionn-7733882.mp3",
+        },
+        {
             name: "Unity",
             author: "TheFatRat",
             image: "./assets/img/TheFatRat.jpg",
