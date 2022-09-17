@@ -32,9 +32,22 @@ html {
     box-shadow: 0 0 24px 1px rgb(0 0 0 / 40%);
     padding: 20px 30px;
     border-radius: 10px;
-    background: url("../img/background-min.gif") no-repeat top left / cover;
     text-align: center;
     font-size: 2.3rem;
+    height: 579px;
+    z-index: 0;
+}
+
+.music-card__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top left;
+    border-radius: 10px;
+    z-index: -1;
 }
 
 .music-card__header {
@@ -257,6 +270,7 @@ html {
     padding: 10px 0;
     margin-left: 9px;
     cursor: pointer;
+    user-select: none;
 }
 .volume-change__bar {
     background-color: #dadada;
@@ -325,10 +339,12 @@ html {
     transition: all 0.5s;
     transform: translateY(50%);
     opacity: 0;
+    z-index: 1;
 }
 .playlist {
+    position: relative;
     width: var(--card-height);
-    background: url("../img/background-min.gif") no-repeat center top / cover;
+    height: 579px;
     border-radius: 10px;
     padding: 18px 0;
     /* display: none; */

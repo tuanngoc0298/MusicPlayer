@@ -60,87 +60,87 @@ const apps = {
         {
             name: "Attention",
             author: "Charlie Puth",
-            image: "./assets/img/CharliePuth-min.jpg",
+            image: "./assets/img/CharliePuth.jpg",
             path: "./assets/music/Attention-CharliePuth-6429177.mp3",
         },
         {
             name: "Hymn For Weekend",
             author: "Cold Play",
-            image: "./assets/img/ColdPlay-min.jpg",
+            image: "./assets/img/ColdPlay.jpg",
             path: "./assets/music/HymnForTheWeekend-Coldplay-6426703.mp3",
         },
         {
             name: "The Lazy Song",
             author: "Bruno Mars",
-            image: "./assets/img/BrunoMars2-min.jpg",
+            image: "./assets/img/BrunoMars2.jpg",
             path: "./assets/music/TheLazySong-BrunoMars-6435263.mp3",
         },
         {
             name: "Nevada",
             author: "MonsterCat",
-            image: "./assets/img/MonsterCat-min.jpg",
+            image: "./assets/img/MonsterCat.jpg",
             path: "./assets/music/Nevada-Monstercat-6983746.mp3",
         },
         {
             name: "Numb",
             author: "Linkin Park",
-            image: "./assets/img/LinkinPark-min.jpg",
+            image: "./assets/img/LinkinPark.jpg",
             path: "./assets/music/Numb-LinkinPark-6441286.mp3",
         },
         {
             name: "Treasure",
             author: "Bruno Mars",
-            image: "./assets/img/BrunoMars3-min.jpg",
+            image: "./assets/img/BrunoMars3.jpg",
             path: "./assets/music/Treasure-BrunoMars-6426948.mp3",
         },
         {
             name: "Pay Phone",
             author: "Maroon 5",
-            image: "./assets/img/Maroon5-min.jpg",
+            image: "./assets/img/Maroon5.jpg",
             path: "./assets/music/Payphone-Maroon5_498k.mp3",
         },
         {
             name: "See You Again",
             author: "Charlie Puth",
-            image: "./assets/img/CharliePuth3-min.jpg",
+            image: "./assets/img/CharliePuth3.jpg",
             path: "./assets/music/SeeYouAgainFeatCharliePuth-WizKhalifa-6426109.mp3",
         },
         {
             name: "That Girl",
             author: "Olly Murs",
-            image: "./assets/img/OllyMurs-min.jpg",
+            image: "./assets/img/OllyMurs.jpg",
             path: "./assets/music/ThatGirl-OllyMurs-6560207.mp3",
         },
         {
             name: "CMNQ",
             author: "Son Tung",
-            image: "./assets/img/SonTung1-min.jpg",
+            image: "./assets/img/SonTung1.jpg",
             path: "./assets/music/ConMuaNgangQua-SonTungMTP-2944936.mp3",
         },
         {
             name: "That's What Like",
             author: "Bruno Mars",
-            image: "./assets/img/BrunoMars1-min.jpg",
+            image: "./assets/img/BrunoMars1.jpg",
             path: "./assets/music/ThatSWhatILike-BrunoMars-6437811.mp3",
         },
         {
             name: "All Falls Down",
             author: "Alan Walker",
-            image: "./assets/img/AlanWalker-min.jpg",
+            image: "./assets/img/AlanWalker.jpg",
             path: "./assets/music/AllFallsDown-AlanWalkerNoahCyrusDigitalFarmAnimalsJuliander-5817723.mp3",
         },
 
         {
             name: "Closer",
             author: "Halsey",
-            image: "./assets/img/Halsey-min.jpg",
+            image: "./assets/img/Halsey.jpg",
             path: "./assets/music/Closer-TheChainsmokersHalsey-4419395.mp3",
         },
 
         {
             name: "CMNQ 2",
             author: "Son Tung",
-            image: "./assets/img/SonTung2-min.jpg",
+            image: "./assets/img/SonTung2.jpg",
             path: "./assets/music/ConMuaNgangQuaPart2-M-TP_3c26j.mp3",
         },
         {
@@ -152,25 +152,25 @@ const apps = {
         {
             name: "Em Dung Di",
             author: "Son Tung",
-            image: "./assets/img/SonTung1-min.jpg",
+            image: "./assets/img/SonTung1.jpg",
             path: "./assets/music/EmDungDi-M-TP_3j3w3.mp3",
         },
         {
             name: "Havana",
             author: "Camila Cabello",
-            image: "./assets/img/Camila1-min.jpg",
+            image: "./assets/img/Camila1.jpg",
             path: "./assets/music/Havana-CamilaCabelloYoungThug-5817730.mp3",
         },
         {
             name: "I Do",
             author: "911",
-            image: "./assets/img/911-min.jpg",
+            image: "./assets/img/911.jpg",
             path: "./assets/music/IDo-911-2757427.mp3",
         },
         {
             name: "CMNQ 3",
             author: "Son Tung",
-            image: "./assets/img/SonTung2-min.jpg",
+            image: "./assets/img/SonTung2.jpg",
             path: "./assets/music/ConMuaNgangQuapart3-MTP-2427879.mp3",
         },
         {
@@ -189,7 +189,7 @@ const apps = {
         {
             name: "Symphony",
             author: "Clean Bandit",
-            image: "./assets/img/CleanBanDit-min.jpg",
+            image: "./assets/img/CleanBanDit.jpg",
             path: "./assets/music/Symphony-CleanBanditZaraLarsson-4822950.mp3",
         },
         {
@@ -201,22 +201,28 @@ const apps = {
         {
             name: "Until You",
             author: "Shayne Warrd",
-            image: "./assets/img/ShayNe-min.jpg",
+            image: "./assets/img/ShayNe.jpg",
             path: "./assets/music/UntilYou-ShayneWard-1979790.mp3",
         },
         {
             name: "We Don't Talk Anymore",
             author: "CharliePuth",
-            image: "./assets/img/CharliePuth2-min.jpg",
+            image: "./assets/img/CharliePuth2.jpg",
             path: "./assets/music/WeDonTTalkAnymoreFeatSelenaGomez-CharliePuth-6426101.mp3",
+        },
+        {
+            name: "Le Anh Van Roi",
+            author: "Son Tung",
+            image: "./assets/img/SonTung1.jpg",
+            path: "./assets/music/LeAnhVanRoi.mp3.mp3",
         },
     ],
     handleEvent() {
         // Turn off right click hide context menu
-        playerMusic.addEventListener("contextmenu", (e) => {
-            // alert("Suprice mother fucker!");
-            // e.preventDefault();
-        });
+        // playerMusic.addEventListener("contextmenu", (e) => {
+        //     alert("Fuck you");
+        //     e.preventDefault();
+        // });
         const _this = this;
         this.activeSong();
         // Show/Hide listSongs when click icon
