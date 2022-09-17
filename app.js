@@ -214,7 +214,7 @@ const apps = {
             name: "Le Anh Van Roi",
             author: "Son Tung",
             image: "./assets/img/SonTung1.jpg",
-            path: "./assets/music/LeAnhVanRoi.mp3.mp3",
+            path: "./assets/music/LeAnhVanRoi.mp3",
         },
     ],
     handleEvent() {
