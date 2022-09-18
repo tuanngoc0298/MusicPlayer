@@ -316,10 +316,10 @@ const apps = {
         // When the currentTime song change,
         // When the progress song change
         audio.ontimeupdate = () => {
-            const percentProgress = (audio.currentTime / audio.duration) * 100;
             timeCurrent.innerText = _this.timeFormat(audio.currentTime);
             // Handling if holding the mouse to rewind, progressValue will not run every time the song changes time current but will change according to the position the mouse is holding,
             if (_this.isHoldProgressBar == false) {
+                const percentProgress = (audio.currentTime / audio.duration) * 100;
                 progressValue.style.width = `${percentProgress}%`;
             }
         };
@@ -355,14 +355,14 @@ const apps = {
                 _this.isHoldProgressBar = false;
                 const rect = progressBar.getBoundingClientRect();
 
-                var percentProgress = parseFloat((e.pageX - rect.left) / progressBar.offsetWidth);
+                let percentProgress = parseFloat(((e.pageX - rect.left) / progressBar.offsetWidth) * 100);
                 if (percentProgress < 0) {
                     percentProgress = 0;
                 }
                 if (percentProgress > 100) {
                     percentProgress = 100;
                 }
-                audio.currentTime = percentProgress * audio.duration;
+                audio.currentTime = (percentProgress / 100) * audio.duration;
                 playerMusic.classList.remove("player-music--hover-progress");
             }
         });
@@ -468,6 +468,19 @@ const apps = {
                 volumeChange.classList.add("mute");
             } else {
                 volumeChange.classList.remove("mute");
+            }
+        });
+
+        // Handle when user Press space and arrow keys
+        document.addEventListener("keydown", (e) => {
+            if (e.which == 32) {
+                btnPlay.click();
+            }
+            if (e.which == 39) {
+                audio.currentTime += 5;
+            }
+            if (e.which == 37) {
+                audio.currentTime -= 5;
             }
         });
     },
