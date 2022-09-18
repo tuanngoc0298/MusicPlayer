@@ -231,7 +231,8 @@ const apps = {
         //     e.preventDefault();
         // });
         const _this = this;
-        this.activeSong();
+        const playListItems = $$(".playlist_item");
+        playListItems[this.currentIndex].classList.add("active");
         // Show/Hide listSongs when click icon
         listSongIcon.onclick = () => {
             _this.togglePlayList();
@@ -367,7 +368,6 @@ const apps = {
         });
 
         // Active song in playlist
-        const playListItems = $$(".playlist_item");
         playListItems.forEach((song, index) => {
             const option = song.querySelector(".playlist_item-options");
             option.onclick = (e) => {
