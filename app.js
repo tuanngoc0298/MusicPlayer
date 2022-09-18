@@ -485,7 +485,7 @@ const apps = {
             return `
                 <li class="playlist_item"  data-index = "${index} ">
                     <div class = "playlist_item-img">
-                        <img src="${song.image}" alt="">
+                        <img src="${song.image}" alt="" loading="lazy">
                     </div>
                     <div class="playlist_item-info">
                         <h3 class="playlist_item-name text">${song.name}</h3>
