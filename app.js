@@ -48,6 +48,7 @@ const iconFavourite = $(".add-favourite-icon");
 const btnRepeat = $(".btn-repeat");
 const btnRandom = $(".btn-random");
 const apps = {
+    previousIndex: 0,
     currentIndex: 0,
     currentVolume: 100,
     isPlaying: false,
@@ -375,6 +376,7 @@ const apps = {
             song.addEventListener("click", (e) => {
                 // Remove case click on option and currentSong
                 if (e.target != option && _this.currentIndex != index) {
+                    _this.previousIndex = _this.currentIndex;
                     _this.currentIndex = index;
                     _this.loadCurrentSong();
                     // Do not render because when rendering the variables will be changed, so they will not receive the value
@@ -536,6 +538,7 @@ const apps = {
         };
     },
     nextSong() {
+        this.previousIndex = this.currentIndex;
         this.currentIndex++;
         if (this.currentIndex == this.songs.length) {
             this.currentIndex = 0;
@@ -544,6 +547,7 @@ const apps = {
         this.activeSong();
     },
     prevSong() {
+        this.previousIndex = this.currentIndex;
         this.currentIndex--;
         if (this.currentIndex < 0) {
             this.currentIndex = this.songs.length - 1;
@@ -553,14 +557,11 @@ const apps = {
     },
     activeSong() {
         const playListItems = $$(".playlist_item");
-        playListItems.forEach((song, index) => {
-            if (index == this.currentIndex) {
-                song.classList.add("active");
-                this.scrollToActiveSong(song);
-            } else {
-                song.classList.remove("active");
-            }
-        });
+        const songActive = playListItems[this.currentIndex];
+        songActive.classList.add("active");
+        this.scrollToActiveSong(songActive);
+
+        playListItems[this.previousIndex].classList.remove("active");
     },
     scrollToActiveSong(songActive) {
         songActive.scrollIntoView({
@@ -570,6 +571,7 @@ const apps = {
     },
     randomSong() {
         const indexRandomSOng = Math.floor(Math.random() * this.songs.length);
+        this.previousIndex = this.currentIndex;
         this.currentIndex = indexRandomSOng;
         this.loadCurrentSong();
         this.activeSong();
