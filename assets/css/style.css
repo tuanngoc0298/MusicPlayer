@@ -86,7 +86,7 @@ html {
 }
 .tooltip {
     color: #000;
-    padding: 4px 10px;
+    padding: 7px 11px;
     font-size: 1.2rem;
     position: absolute;
     bottom: 96%;
@@ -109,7 +109,7 @@ html {
     border-color: #fff transparent transparent transparent;
     border-style: solid;
     position: absolute;
-    bottom: -12px;
+    bottom: -11px;
     right: 43px;
 }
 .list-music-icon:hover .tooltip,
